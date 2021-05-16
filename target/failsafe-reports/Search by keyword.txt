@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: Search by keyword
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 16.75 s <<< FAILURE! - in Search by keyword
+Refining a search using two terms(Search by keyword)  Time elapsed: 7.35 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting all elements of:
+  <["Zucchini - Wikipedia",
+    "Receita de Zucchini (abobrinhas) à Italiana, enviada por ...",
+    "ZUCCHINI - Tradução em português - bab.la",
+    "Zucchinni Pizzas & Esfihas | Pizzaria e esfiharia delivery ...",
+    "zucchini | tradução de Inglês para Português",
+    "zucchini - Dicionário Inglês-Português (Brasil ...",
+    "zucchini - Tradução em português - Linguee",
+    "Zucchini: Health Benefits, Nutrients, Preparation, and More",
+    "5 Tips for Growing Great Zucchini - The Spruce",
+    "Zucchini Restaurante"]>
+to match given predicate but this element did not:
+  <"Zucchinni Pizzas & Esfihas | Pizzaria e esfiharia delivery ...">
+
