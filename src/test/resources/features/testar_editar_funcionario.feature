@@ -22,4 +22,4 @@ Funcionalidade: Testar Editar Funcionario
 
     Exemplos:
       | nome        | cargo                     | salario | sexo      | admissao   | tipoContratacao |
-      | Ana Rosseti | Analista de Testes Senior | 1500000 | Feminino  | 02/07/2012 | PJ              |
+      | Ana Rosseti | Analista de Testes Senior | 1700000 | Feminino  | 02/07/2012 | PJ              |
