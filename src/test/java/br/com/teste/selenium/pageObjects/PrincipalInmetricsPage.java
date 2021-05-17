@@ -164,6 +164,12 @@ public class PrincipalInmetricsPage extends CommonPageObject {
         $(By.xpath("//td[contains(text(), '" + ManipuladorPropriedades.getCPFFunc() + "')]/parent::tr//button[@class='btn btn-warning']")).click();
     }
 
+    public void clicarNoBotaoExcluirDoFuncionarioCadastrado() {
+
+        $(By.xpath("//td[contains(text(), '" + ManipuladorPropriedades.getCPFFunc() + "')]/parent::tr//button[@id='delete-btn']")).waitUntilClickable();
+        $(By.xpath("//td[contains(text(), '" + ManipuladorPropriedades.getCPFFunc() + "')]/parent::tr//button[@id='delete-btn']")).click();
+    }
+
     @FindBy(xpath="//strong[contains(text(), 'Usuário cadastrado com sucesso')]")
     WebElementFacade msgUsuarioCadastrado;
 
@@ -206,5 +212,27 @@ public class PrincipalInmetricsPage extends CommonPageObject {
         }
 
         return funcAtualizadoComSucesso;
+    }
+
+    @FindBy(xpath="//strong[contains(text(), 'Funcionário removido com sucesso')]")
+    WebElementFacade msgFuncRemovido;
+
+    public Boolean validarSeFuncFoiRemovido() {
+
+        Boolean funcRemovidoComSucesso = msgFuncRemovido.isCurrentlyVisible();
+
+        int tentativas = 0;
+
+        while (funcRemovidoComSucesso == false) {
+
+            tentativas++;
+            if (tentativas > 5) {
+                break;
+            }
+
+            funcRemovidoComSucesso = msgFuncRemovido.isCurrentlyVisible();
+        }
+
+        return funcRemovidoComSucesso;
     }
 }

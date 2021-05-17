@@ -3,11 +3,11 @@
     "line": 5,
     "elements": [
       {
-        "start_timestamp": "2021-05-17T02:45:05.780Z",
+        "start_timestamp": "2021-05-17T02:55:27.347Z",
         "before": [
           {
             "result": {
-              "duration": 31231900,
+              "duration": 7690000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 19,
-        "name": "Editar funcionario",
+        "line": 7,
+        "name": "Exluir funcionario",
         "description": "",
-        "id": "testar-editar-funcionario;editar-funcionario;;2",
+        "id": "testar-excluir-funcionario;exluir-funcionario",
         "after": [
           {
             "result": {
-              "duration": 900200,
+              "duration": 734500,
               "status": "passed"
             },
             "match": {
@@ -31,11 +31,11 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Esquema do Cenário",
+        "keyword": "Cenário",
         "steps": [
           {
             "result": {
-              "duration": 6305742400,
+              "duration": 4612890800,
               "status": "passed"
             },
             "line": 8,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 131961000,
+              "duration": 158359600,
               "status": "passed"
             },
             "line": 9,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 127057100,
+              "duration": 129171700,
               "status": "passed"
             },
             "line": 10,
@@ -71,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 2286715800,
+              "duration": 1846677100,
               "status": "passed"
             },
             "line": 11,
@@ -83,49 +83,57 @@
           },
           {
             "result": {
-              "duration": 1660678200,
+              "duration": 1306521000,
               "status": "passed"
             },
             "line": 12,
-            "name": "clico no botão Editar do funcionario cadastrado",
+            "name": "clico no botão Excluir do funcionario cadastrado",
             "match": {
-              "location": "EdicaoFuncionarioStepDefinitions.clico_no_botão_Editar_do_funcionario_cadastrado()"
+              "location": "ExclusaoFuncionarioStepDefinitions.clico_no_botão_Excluir_do_funcionario_cadastrado()"
             },
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 238009700,
+              "duration": 277618500,
               "status": "passed"
             },
             "line": 13,
-            "name": "edito o \"Analista de Testes Senior\" do funcionaro",
+            "name": "funcionario é excluido com sucesso",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Analista de Testes Senior\"",
-                  "offset": 8
-                }
-              ],
-              "location": "EdicaoFuncionarioStepDefinitions.edito_o_do_funcionaro(String)"
+              "location": "ExclusaoFuncionarioStepDefinitions.funcionario_é_excluido_com_sucesso()"
             },
-            "keyword": "Quando "
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TesteExcluirFuncionario"
+          }
+        ]
+      }
+    ],
+    "name": "Testar Excluir Funcionario",
+    "description": "",
+    "id": "testar-excluir-funcionario",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/testar_excluir_funcionario.feature",
+    "tags": [
+      {
+        "name": "@TesteExcluirFuncionario",
+        "type": "Tag",
+        "location": {
+          "line": 4,
+          "column": 1
+        }
+      }
+    ]
+  }
+] "Quando "
           },
           {
             "result": {
-              "duration": 2260118000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "clico no botão Enviar",
-            "match": {
-              "location": "CadastroFuncionarioStepDefinitions.clico_no_botão_Enviar()"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 297282000,
+              "duration": 271187300,
               "status": "passed"
             },
             "line": 15,
@@ -151,6 +159,120 @@
     "tags": [
       {
         "name": "@TesteEditarFuncionario",
+        "type": "Tag",
+        "location": {
+          "line": 4,
+          "column": 1
+        }
+      }
+    ]
+  }
+]e": "preencho o salário do funcionario \"1200000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1200000\"",
+                  "offset": 34
+                }
+              ],
+              "location": "CadastroFuncionarioStepDefinitions.preencho_o_salário_do_funcionario(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 295515200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "preencho o sexo do funcionario \"Masculino\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Masculino\"",
+                  "offset": 31
+                }
+              ],
+              "location": "CadastroFuncionarioStepDefinitions.preencho_o_sexo_do_funcionario(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 212895500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "preencho a admissão do funcionario \"01/07/2012\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"01/07/2012\"",
+                  "offset": 35
+                }
+              ],
+              "location": "CadastroFuncionarioStepDefinitions.preencho_a_admissão_do_funcionario(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 239880900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "preencho a tipo de contratação do funcionario \"CLT\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CLT\"",
+                  "offset": 46
+                }
+              ],
+              "location": "CadastroFuncionarioStepDefinitions.preencho_a_tipo_de_contratação_do_funcionario(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 1827564800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "clico no botão Enviar",
+            "match": {
+              "location": "CadastroFuncionarioStepDefinitions.clico_no_botão_Enviar()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 329478900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "funcionario é cadastrado com sucesso",
+            "match": {
+              "location": "CadastroFuncionarioStepDefinitions.funcionario_é_cadastrado_com_sucesso()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TesteCadastrarFuncionario"
+          }
+        ]
+      }
+    ],
+    "name": "Testar Cadastrar Funcionario",
+    "description": "",
+    "id": "testar-cadastrar-funcionario",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/testar_cadastro_funcionario.feature",
+    "tags": [
+      {
+        "name": "@TesteCadastrarFuncionario",
         "type": "Tag",
         "location": {
           "line": 4,

@@ -7,6 +7,7 @@ import br.com.teste.selenium.runner.TestarCadastroRunner;
 import br.com.teste.selenium.runner.TestarLoginRunner;
 import br.com.teste.selenium.runner.TestarCadastroFuncionarioRunner;
 import br.com.teste.selenium.runner.TestarEditarFuncionarioRunner;
+import br.com.teste.selenium.runner.TestarExcluirFuncionarioRunner;
 
 @RunWith(Suite.class)
 
@@ -14,7 +15,8 @@ import br.com.teste.selenium.runner.TestarEditarFuncionarioRunner;
         TestarCadastroRunner.class,
         TestarLoginRunner.class,
         TestarCadastroFuncionarioRunner.class,
-        TestarEditarFuncionarioRunner.class
+        TestarEditarFuncionarioRunner.class,
+        TestarExcluirFuncionarioRunner.class
 })
 
 public class TesteSuite {

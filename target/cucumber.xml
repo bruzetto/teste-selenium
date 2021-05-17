@@ -1,13 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="16.124442">
-<testcase classname="Testar Editar Funcionario" name="Editar funcionario" time="16.124442">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="10.190611">
+<testcase classname="Testar Excluir Funcionario" name="Exluir funcionario" time="10.190611">
 <system-out><![CDATA[Dado que estou na Pagina de login da Inmetrics..............................passed
 Quando preencho o usuario cadastrado........................................passed
 Quando preencho a senha cadastrada..........................................passed
 Quando clico no botão Entre.................................................passed
-Quando clico no botão Editar do funcionario cadastrado......................passed
-Quando edito o "Analista de Testes Senior" do funcionaro....................passed
-Quando clico no botão Enviar................................................passed
+Quando clico no botão Excluir do funcionario cadastrado.....................passed
+Entao funcionario é excluido com sucesso....................................passed
+]]></system-out>
+</testcase>
+</testsuite>
+..............................passed
 Entao funcionario é atualizado com sucesso..................................passed
 ]]></system-out>
+</testcase>
+</testsuite>
+o "1200000"..........................passed
+Quando preencho o sexo do funcionario "Masculino"...........................passed
+Quando preencho a admissão do funcionario "01/07/2012"......................passed
+Quando preencho a tipo de contratação do funcionario "CLT"..................passed
+Quando clico no botão Enviar................................................passed
+Entao funcionario é cadastrado com sucesso..................................passed
+]]></system-out>
+</testcase>
+</testsuite>
+CadastroStepDefinitions.usuario_cadastrado_com_sucesso(CadastroStepDefinitions.java:50)
+	at ✽.usuario é cadastrado com sucesso(file:src/test/resources/features/testar_cadastro_usuario.feature:14)
+]]></failure>
 </testcase>
 </testsuite>
