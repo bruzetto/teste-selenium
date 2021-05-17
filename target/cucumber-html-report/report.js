@@ -1,16 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/testar_cadastro_funcionario.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/testar_editar_funcionario.feature");
 formatter.feature({
-  "name": "Testar Cadastrar Funcionario",
+  "name": "Testar Editar Funcionario",
   "description": "",
   "keyword": "Funcionalidade",
   "tags": [
     {
-      "name": "@TesteCadastrarFuncionario"
+      "name": "@TesteEditarFuncionario"
     }
   ]
 });
 formatter.scenarioOutline({
-  "name": "Logar usuário",
+  "name": "Editar funcionario",
   "description": "",
   "keyword": "Esquema do Cenário"
 });
@@ -31,35 +31,11 @@ formatter.step({
   "keyword": "Quando "
 });
 formatter.step({
-  "name": "clico no botão Novo Funcionário",
+  "name": "clico no botão Editar do funcionario cadastrado",
   "keyword": "Quando "
 });
 formatter.step({
-  "name": "preencho a nome do funcionario \"\u003cnome\u003e\"",
-  "keyword": "Quando "
-});
-formatter.step({
-  "name": "preencho o cargo do funcionario \"\u003ccargo\u003e\"",
-  "keyword": "Quando "
-});
-formatter.step({
-  "name": "preencho o CPF do funcionario \"\u003cCPF\u003e\"",
-  "keyword": "Quando "
-});
-formatter.step({
-  "name": "preencho o salário do funcionario \"\u003csalario\u003e\"",
-  "keyword": "Quando "
-});
-formatter.step({
-  "name": "preencho o sexo do funcionario \"\u003csexo\u003e\"",
-  "keyword": "Quando "
-});
-formatter.step({
-  "name": "preencho a admissão do funcionario \"\u003cadmissao\u003e\"",
-  "keyword": "Quando "
-});
-formatter.step({
-  "name": "preencho a tipo de contratação do funcionario \"\u003ctipoContratacao\u003e\"",
+  "name": "edito o \"\u003ccargo\u003e\" do funcionaro",
   "keyword": "Quando "
 });
 formatter.step({
@@ -67,7 +43,7 @@ formatter.step({
   "keyword": "Quando "
 });
 formatter.step({
-  "name": "funcionario é cadastrado com sucesso",
+  "name": "funcionario é atualizado com sucesso",
   "keyword": "Entao "
 });
 formatter.examples({
@@ -77,35 +53,23 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "nome",
-        "cargo",
-        "CPF",
-        "salario",
-        "sexo",
-        "admissao",
-        "tipoContratacao"
+        "cargo"
       ]
     },
     {
       "cells": [
-        "Bruno Tozetto",
-        "Analista de Testes",
-        "359.985.968-03",
-        "1200000",
-        "Masculino",
-        "01/07/2012",
-        "CLT"
+        "Analista de Testes Senior"
       ]
     }
   ]
 });
 formatter.scenario({
-  "name": "Logar usuário",
+  "name": "Editar funcionario",
   "description": "",
   "keyword": "Esquema do Cenário",
   "tags": [
     {
-      "name": "@TesteCadastrarFuncionario"
+      "name": "@TesteEditarFuncionario"
     }
   ]
 });
@@ -153,81 +117,21 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "clico no botão Novo Funcionário",
+  "name": "clico no botão Editar do funcionario cadastrado",
   "keyword": "Quando "
 });
 formatter.match({
-  "location": "CadastroFuncionarioStepDefinitions.clico_no_botão_Novo_Funcionário()"
+  "location": "EdicaoFuncionarioStepDefinitions.clico_no_botão_Editar_do_funcionario_cadastrado()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "preencho a nome do funcionario \"Bruno Tozetto\"",
+  "name": "edito o \"Analista de Testes Senior\" do funcionaro",
   "keyword": "Quando "
 });
 formatter.match({
-  "location": "CadastroFuncionarioStepDefinitions.preencho_a_nome_do_funcionario(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "preencho o cargo do funcionario \"Analista de Testes\"",
-  "keyword": "Quando "
-});
-formatter.match({
-  "location": "CadastroFuncionarioStepDefinitions.preencho_o_cargo_do_funcionario(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "preencho o CPF do funcionario \"359.985.968-03\"",
-  "keyword": "Quando "
-});
-formatter.match({
-  "location": "CadastroFuncionarioStepDefinitions.preencho_o_CPF_do_funcionario(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "preencho o salário do funcionario \"1200000\"",
-  "keyword": "Quando "
-});
-formatter.match({
-  "location": "CadastroFuncionarioStepDefinitions.preencho_o_salário_do_funcionario(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "preencho o sexo do funcionario \"Masculino\"",
-  "keyword": "Quando "
-});
-formatter.match({
-  "location": "CadastroFuncionarioStepDefinitions.preencho_o_sexo_do_funcionario(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "preencho a admissão do funcionario \"01/07/2012\"",
-  "keyword": "Quando "
-});
-formatter.match({
-  "location": "CadastroFuncionarioStepDefinitions.preencho_a_admissão_do_funcionario(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "preencho a tipo de contratação do funcionario \"CLT\"",
-  "keyword": "Quando "
-});
-formatter.match({
-  "location": "CadastroFuncionarioStepDefinitions.preencho_a_tipo_de_contratação_do_funcionario(String)"
+  "location": "EdicaoFuncionarioStepDefinitions.edito_o_do_funcionaro(String)"
 });
 formatter.result({
   "status": "passed"
@@ -243,11 +147,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "funcionario é cadastrado com sucesso",
+  "name": "funcionario é atualizado com sucesso",
   "keyword": "Entao "
 });
 formatter.match({
-  "location": "CadastroFuncionarioStepDefinitions.funcionario_é_cadastrado_com_sucesso()"
+  "location": "EdicaoFuncionarioStepDefinitions.funcionario_é_atualizado_com_sucesso()"
 });
 formatter.result({
   "status": "passed"

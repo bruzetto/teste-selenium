@@ -1,8 +1,10 @@
 package br.com.teste.selenium.pageObjects;
 
+import br.com.teste.selenium.utils.ManipuladorPropriedades;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
 
 @DefaultUrl("https://inm-test-app.herokuapp.com/empregados/")
@@ -104,6 +106,13 @@ public class PrincipalInmetricsPage extends CommonPageObject {
         inputCargo.sendKeys(cargo);
     }
 
+    public void editarCargoFunc(String cargo) {
+
+        inputCargo.waitUntilEnabled();
+        inputCargo.clear();
+        inputCargo.sendKeys(cargo);
+    }
+
     @FindBy(id = "dinheiro")
     private WebElementFacade dinheiro;
 
@@ -149,6 +158,12 @@ public class PrincipalInmetricsPage extends CommonPageObject {
         btnEnviar.click();
     }
 
+    public void clicarNoBotaoEditarDoFuncionarioCadastrado() {
+
+        $(By.xpath("//td[contains(text(), '" + ManipuladorPropriedades.getCPFFunc() + "')]/parent::tr//button[@class='btn btn-warning']")).waitUntilClickable();
+        $(By.xpath("//td[contains(text(), '" + ManipuladorPropriedades.getCPFFunc() + "')]/parent::tr//button[@class='btn btn-warning']")).click();
+    }
+
     @FindBy(xpath="//strong[contains(text(), 'Usuário cadastrado com sucesso')]")
     WebElementFacade msgUsuarioCadastrado;
 
@@ -171,8 +186,25 @@ public class PrincipalInmetricsPage extends CommonPageObject {
         return usuarioCadastradoComSucesso;
     }
 
+    @FindBy(xpath="//strong[contains(text(), 'Informações atualizadas com sucesso')]")
+    WebElementFacade msgFuncAtualizado;
 
+    public Boolean validarSeFuncFoiAtualizado() {
 
+        Boolean funcAtualizadoComSucesso = msgFuncAtualizado.isCurrentlyVisible();
 
+        int tentativas = 0;
 
+        while (funcAtualizadoComSucesso == false) {
+
+            tentativas++;
+            if (tentativas > 5) {
+                break;
+            }
+
+            funcAtualizadoComSucesso = msgFuncAtualizado.isCurrentlyVisible();
+        }
+
+        return funcAtualizadoComSucesso;
+    }
 }

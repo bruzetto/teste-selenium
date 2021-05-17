@@ -50,6 +50,26 @@ public class ManipuladorPropriedades {
 
     //endregion
 
+    //region cpf do funcionario
+
+    private static String cpfFunc = "";
+
+    public static String getCPFFunc() {
+
+        return cpfFunc;
+    }
+
+    public static void setCPFFunc(String cpf) {
+
+        if (cpf == null) {
+            cpfFunc = "";
+        } else {
+            cpfFunc = cpf;
+        }
+    }
+
+    //endregion
+
     public static void setProperties() throws IOException {
 
         Properties props = new Properties();
@@ -58,6 +78,7 @@ public class ManipuladorPropriedades {
 
         props.setProperty("usuario.login", getUsuario());
         props.setProperty("senha.login", getSenha());
+        props.setProperty("cpf.func", getCPFFunc());
 
         props.store(output_resources, "Dados da execução");
     }
@@ -77,5 +98,6 @@ public class ManipuladorPropriedades {
 
         setUsuario(props.getProperty("usuario.login"));
         setSenha(props.getProperty("senha.login"));
+        setCPFFunc(props.getProperty("cpf.func"));
     }
 }

@@ -1,6 +1,7 @@
 package br.com.teste.selenium.stepdefinitions;
 
 import br.com.teste.selenium.pageObjects.PrincipalInmetricsPage;
+import br.com.teste.selenium.utils.ManipuladorPropriedades;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 import org.junit.Assert;
@@ -31,6 +32,7 @@ public class CadastroFuncionarioStepDefinitions {
     public void preencho_o_CPF_do_funcionario(String CPF) {
 
         principalInmetricsPage.preencherCPFFuncinario(CPF);
+        ManipuladorPropriedades.setCPFFunc(CPF);
     }
 
     @Quando("preencho o salário do funcionario {string}")
