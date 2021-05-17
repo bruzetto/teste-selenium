@@ -18,6 +18,6 @@ public class ExclusaoFuncionarioStepDefinitions {
     @Entao("funcionario é excluido com sucesso")
     public void funcionario_é_excluido_com_sucesso() {
 
-        Assert.assertTrue("Funcionário não foi atualizado com sucesso.", (principalInmetricsPage.validarSeFuncFoiRemovido() == false));
+        Assert.assertTrue("Funcionário não foi atualizado com sucesso.", (principalInmetricsPage.validarSeFuncFoiRemovido() == true));
     }
 }

@@ -12,7 +12,7 @@ Funcionalidade: Testar Cadastrar Funcionario
     Quando clico no botão Novo Funcionário
     Quando preencho a nome do funcionario "<nome>"
     Quando preencho o cargo do funcionario "<cargo>"
-    Quando preencho o CPF do funcionario "<CPF>"
+    Quando preencho o CPF do funcionario
     Quando preencho o salário do funcionario "<salario>"
     Quando preencho o sexo do funcionario "<sexo>"
     Quando preencho a admissão do funcionario "<admissao>"
@@ -21,5 +21,5 @@ Funcionalidade: Testar Cadastrar Funcionario
     Entao funcionario é cadastrado com sucesso
 
     Exemplos:
-      | nome         | cargo              | CPF            | salario | sexo      | admissao   | tipoContratacao |
-      | Bruno Tozetto| Analista de Testes | 359.985.968-03 | 1200000 | Masculino | 01/07/2012 | CLT             |
+      | nome         | cargo              | salario | sexo      | admissao   | tipoContratacao |
+      | Bruno Tozetto| Analista de Testes | 1200000 | Masculino | 01/07/2012 | CLT             |

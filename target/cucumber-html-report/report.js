@@ -153,8 +153,7 @@ formatter.result({
 formatter.after({
   "status": "passed"
 });
-});match({
-  "location": "CadastroFuncionarioStepDefinitions.clico_no_botão_Novo_Funcionário()"
+});co_no_botão_Novo_Funcionário()"
 });
 formatter.result({
   "status": "passed"
@@ -180,11 +179,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "preencho o CPF do funcionario \"359.985.968-03\"",
+  "name": "preencho o CPF do funcionario",
   "keyword": "Quando "
 });
 formatter.match({
-  "location": "CadastroFuncionarioStepDefinitions.preencho_o_CPF_do_funcionario(String)"
+  "location": "CadastroFuncionarioStepDefinitions.preencho_o_CPF_do_funcionario()"
 });
 formatter.result({
   "status": "passed"

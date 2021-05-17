@@ -3,11 +3,11 @@
     "line": 5,
     "elements": [
       {
-        "start_timestamp": "2021-05-17T02:58:21.123Z",
+        "start_timestamp": "2021-05-17T12:53:19.222Z",
         "before": [
           {
             "result": {
-              "duration": 88347400,
+              "duration": 5902900,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 792500,
+              "duration": 445600,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4706318900,
+              "duration": 6982636200,
               "status": "passed"
             },
             "line": 8,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 134554200,
+              "duration": 253186200,
               "status": "passed"
             },
             "line": 9,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 124715900,
+              "duration": 175089800,
               "status": "passed"
             },
             "line": 10,
@@ -71,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 2028976300,
+              "duration": 1908896200,
               "status": "passed"
             },
             "line": 11,
@@ -83,7 +83,7 @@
           },
           {
             "result": {
-              "duration": 128122700,
+              "duration": 141066900,
               "status": "passed"
             },
             "line": 12,
@@ -95,7 +95,7 @@
           },
           {
             "result": {
-              "duration": 273517300,
+              "duration": 45331900,
               "status": "passed"
             },
             "line": 13,
@@ -129,11 +129,11 @@
       }
     ]
   }
-] "Quando "
+]": "Quando "
           },
           {
             "result": {
-              "duration": 276753300,
+              "duration": 65708300,
               "status": "passed"
             },
             "line": 15,
@@ -167,12 +167,7 @@
       }
     ]
   }
-]e": "preencho o salário do funcionario \"1200000\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"1200000\"",
-                  "offset": 34
+]ffset": 34
                 }
               ],
               "location": "CadastroFuncionarioStepDefinitions.preencho_o_salário_do_funcionario(String)"
@@ -181,7 +176,7 @@
           },
           {
             "result": {
-              "duration": 297349600,
+              "duration": 301372500,
               "status": "passed"
             },
             "line": 17,
@@ -199,7 +194,7 @@
           },
           {
             "result": {
-              "duration": 130494700,
+              "duration": 142547400,
               "status": "passed"
             },
             "line": 18,
@@ -217,7 +212,7 @@
           },
           {
             "result": {
-              "duration": 176743600,
+              "duration": 177348900,
               "status": "passed"
             },
             "line": 19,
@@ -235,7 +230,7 @@
           },
           {
             "result": {
-              "duration": 1339741500,
+              "duration": 1836128300,
               "status": "passed"
             },
             "line": 20,
@@ -247,7 +242,7 @@
           },
           {
             "result": {
-              "duration": 289672000,
+              "duration": 89047700,
               "status": "passed"
             },
             "line": 21,

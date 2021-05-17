@@ -24,6 +24,6 @@ public class EdicaoFuncionarioStepDefinitions {
     @Entao("funcionario é atualizado com sucesso")
     public void funcionario_é_atualizado_com_sucesso() {
 
-        Assert.assertTrue("Funcionário não foi atualizado com sucesso.", (principalInmetricsPage.validarSeFuncFoiAtualizado() == false));
+        Assert.assertTrue("Funcionário não foi atualizado com sucesso.", (principalInmetricsPage.validarSeFuncFoiAtualizado() == true));
     }
 }

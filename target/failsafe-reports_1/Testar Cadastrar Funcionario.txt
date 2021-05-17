@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Testar Cadastrar Funcionario
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.222 s - in Testar Cadastrar Funcionario
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.544 s - in Testar Cadastrar Funcionario

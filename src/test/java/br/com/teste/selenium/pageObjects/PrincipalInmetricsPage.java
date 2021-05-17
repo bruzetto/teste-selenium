@@ -170,12 +170,12 @@ public class PrincipalInmetricsPage extends CommonPageObject {
         $(By.xpath("//td[contains(text(), '" + ManipuladorPropriedades.getCPFFunc() + "')]/parent::tr//button[@id='delete-btn']")).click();
     }
 
-    @FindBy(xpath="//strong[contains(text(), 'Usuário cadastrado com sucesso')]")
-    WebElementFacade msgUsuarioCadastrado;
+    @FindBy(xpath="//div[@class='container-message']/div")
+    WebElementFacade mensagemSistema;
 
     public Boolean validarSeUsuarioFoiCadastrado() {
 
-        Boolean usuarioCadastradoComSucesso = msgUsuarioCadastrado.isCurrentlyVisible();
+        Boolean usuarioCadastradoComSucesso = mensagemSistema.getText().contains("Usuário cadastrado com sucesso");
 
         int tentativas = 0;
 
@@ -186,18 +186,15 @@ public class PrincipalInmetricsPage extends CommonPageObject {
                 break;
             }
 
-            usuarioCadastradoComSucesso = msgUsuarioCadastrado.isCurrentlyVisible();
+            usuarioCadastradoComSucesso = mensagemSistema.getText().contains("Usuário cadastrado com sucesso");
         }
 
         return usuarioCadastradoComSucesso;
     }
 
-    @FindBy(xpath="//strong[contains(text(), 'Informações atualizadas com sucesso')]")
-    WebElementFacade msgFuncAtualizado;
-
     public Boolean validarSeFuncFoiAtualizado() {
 
-        Boolean funcAtualizadoComSucesso = msgFuncAtualizado.isCurrentlyVisible();
+        Boolean funcAtualizadoComSucesso = mensagemSistema.getText().contains("Informações atualizadas com sucesso");
 
         int tentativas = 0;
 
@@ -208,18 +205,15 @@ public class PrincipalInmetricsPage extends CommonPageObject {
                 break;
             }
 
-            funcAtualizadoComSucesso = msgFuncAtualizado.isCurrentlyVisible();
+            funcAtualizadoComSucesso = mensagemSistema.getText().contains("Informações atualizadas com sucesso");
         }
 
         return funcAtualizadoComSucesso;
     }
 
-    @FindBy(xpath="//strong[contains(text(), 'Funcionário removido com sucesso')]")
-    WebElementFacade msgFuncRemovido;
-
     public Boolean validarSeFuncFoiRemovido() {
 
-        Boolean funcRemovidoComSucesso = msgFuncRemovido.isCurrentlyVisible();
+        Boolean funcRemovidoComSucesso = mensagemSistema.getText().contains("Funcionário removido com sucesso");
 
         int tentativas = 0;
 
@@ -230,7 +224,7 @@ public class PrincipalInmetricsPage extends CommonPageObject {
                 break;
             }
 
-            funcRemovidoComSucesso = msgFuncRemovido.isCurrentlyVisible();
+            funcRemovidoComSucesso = mensagemSistema.getText().contains("Funcionário removido com sucesso");
         }
 
         return funcRemovidoComSucesso;

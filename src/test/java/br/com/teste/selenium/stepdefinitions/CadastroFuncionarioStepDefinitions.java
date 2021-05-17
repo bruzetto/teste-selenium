@@ -1,6 +1,7 @@
 package br.com.teste.selenium.stepdefinitions;
 
 import br.com.teste.selenium.pageObjects.PrincipalInmetricsPage;
+import br.com.teste.selenium.utils.GeradorCPF;
 import br.com.teste.selenium.utils.ManipuladorPropriedades;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
@@ -28,8 +29,11 @@ public class CadastroFuncionarioStepDefinitions {
         principalInmetricsPage.preencherCargoFunc(cargo);
     }
 
-    @Quando("preencho o CPF do funcionario {string}")
-    public void preencho_o_CPF_do_funcionario(String CPF) {
+    @Quando("preencho o CPF do funcionario")
+    public void preencho_o_CPF_do_funcionario() {
+
+        GeradorCPF geradorCPF = new GeradorCPF();
+        String CPF = geradorCPF.gerarCPFNovo();
 
         principalInmetricsPage.preencherCPFFuncinario(CPF);
         ManipuladorPropriedades.setCPFFunc(CPF);
@@ -68,6 +72,6 @@ public class CadastroFuncionarioStepDefinitions {
     @Entao("funcionario é cadastrado com sucesso")
     public void funcionario_é_cadastrado_com_sucesso() {
 
-        Assert.assertTrue("Funcionário não foi cadastrado com sucesso.", (principalInmetricsPage.validarSeUsuarioFoiCadastrado() == false));
+        Assert.assertTrue("Funcionário não foi cadastrado com sucesso.", (principalInmetricsPage.validarSeUsuarioFoiCadastrado() == true));
     }
 }
