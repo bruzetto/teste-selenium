@@ -1,11 +1,13 @@
 C:\Users\Public\Projetos\teste-selenium\src\test\java\br\com\teste\selenium\stepdefinitions\LoginStepDefinitions.java
-C:\Users\Public\Projetos\teste-selenium\src\test\java\br\com\teste\selenium\stepdefinitions\CommonStepDefinitions.java
+C:\Users\Public\Projetos\teste-selenium\src\test\java\br\com\teste\selenium\stepdefinitions\CadastroFuncionarioStepDefinitions.java
 C:\Users\Public\Projetos\teste-selenium\src\test\java\br\com\teste\selenium\utils\ManipuladorPropriedades.java
 C:\Users\Public\Projetos\teste-selenium\src\test\java\br\com\teste\selenium\pageObjects\CadastroInmetricsPage.java
 C:\Users\Public\Projetos\teste-selenium\src\test\java\br\com\teste\selenium\pageObjects\PrincipalInmetricsPage.java
-C:\Users\Public\Projetos\teste-selenium\src\test\java\br\com\teste\selenium\runner\TestarCadastroRunner.java
 C:\Users\Public\Projetos\teste-selenium\src\test\java\br\com\teste\selenium\pageObjects\CommonPageObject.java
 C:\Users\Public\Projetos\teste-selenium\src\test\java\br\com\teste\selenium\pageObjects\LoginInmetricsPage.java
-C:\Users\Public\Projetos\teste-selenium\src\test\java\br\com\teste\selenium\runner\TestarLoginRunner.java
 C:\Users\Public\Projetos\teste-selenium\src\test\java\br\com\teste\selenium\stepdefinitions\CadastroStepDefinitions.java
+C:\Users\Public\Projetos\teste-selenium\src\test\java\br\com\teste\selenium\stepdefinitions\CommonStepDefinitions.java
+C:\Users\Public\Projetos\teste-selenium\src\test\java\br\com\teste\selenium\runner\TestarCadastroRunner.java
+C:\Users\Public\Projetos\teste-selenium\src\test\java\br\com\teste\selenium\runner\TestarCadastroFuncionarioRunner.java
+C:\Users\Public\Projetos\teste-selenium\src\test\java\br\com\teste\selenium\runner\TestarLoginRunner.java
 C:\Users\Public\Projetos\teste-selenium\src\test\java\br\com\teste\selenium\suite\TesteSuite.java

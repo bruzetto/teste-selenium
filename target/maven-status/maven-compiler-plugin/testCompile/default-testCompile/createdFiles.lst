@@ -1,7 +1,9 @@
 br\com\teste\selenium\pageObjects\CommonPageObject.class
 br\com\teste\selenium\stepdefinitions\LoginStepDefinitions.class
+br\com\teste\selenium\runner\TestarCadastroFuncionarioRunner.class
 br\com\teste\selenium\runner\TestarLoginRunner.class
 br\com\teste\selenium\stepdefinitions\CadastroStepDefinitions.class
+br\com\teste\selenium\stepdefinitions\CadastroFuncionarioStepDefinitions.class
 br\com\teste\selenium\stepdefinitions\CommonStepDefinitions.class
 br\com\teste\selenium\pageObjects\LoginInmetricsPage.class
 br\com\teste\selenium\pageObjects\CadastroInmetricsPage.class

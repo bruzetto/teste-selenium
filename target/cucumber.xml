@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="18.541959">
-<testcase classname="Testar Cadastrar Funcionario" name="Logar usuário" time="18.541959">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="17.564064">
+<testcase classname="Testar Cadastrar Funcionario" name="Logar usuário" time="17.564064">
 <system-out><![CDATA[Dado que estou na Pagina de login da Inmetrics..............................passed
 Quando preencho o usuario cadastrado........................................passed
 Quando preencho a senha cadastrada..........................................passed

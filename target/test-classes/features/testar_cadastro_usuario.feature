@@ -15,4 +15,4 @@ Funcionalidade: Testar Cadastro
 
     Exemplos:
       | usuario     | senha    |
-      | brunotozett4| Teste12% |
+      | brunotozett5| Teste12% |

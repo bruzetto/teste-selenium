@@ -1,3 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Testar Cadastro","Cadastrar usuário","SUCCESS","2021-05-16T22:17:53.688-03:00[America/Sao_Paulo]","0.0","13.49"
-"Testar Login","Logar usuário","SUCCESS","2021-05-16T22:18:08.911-03:00[America/Sao_Paulo]","0.0","9.86"
+"Testar Cadastrar Funcionario","Logar usuário","SUCCESS","2021-05-16T23:13:43.061-03:00[America/Sao_Paulo]","0.0","18.26"
+"Testar Cadastro","Cadastrar usuário","SUCCESS","2021-05-16T23:13:18.513-03:00[America/Sao_Paulo]","0.0","12.91"
+"Testar Login","Logar usuário","SUCCESS","2021-05-16T23:13:32.825-03:00[America/Sao_Paulo]","0.0","8.85"
