@@ -1,3 +1,3 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Search by keyword","Searching for a term","SUCCESS","2021-05-16T13:32:02.821-03:00[America/Sao_Paulo]","0.0","8.56"
-"Search by keyword","Refining a search using two terms","FAILURE","2021-05-16T13:32:12.214-03:00[America/Sao_Paulo]","0.0","7.35"
+"Testar Cadastro","Cadastrar usuário","SUCCESS","2021-05-16T22:17:53.688-03:00[America/Sao_Paulo]","0.0","13.49"
+"Testar Login","Logar usuário","SUCCESS","2021-05-16T22:18:08.911-03:00[America/Sao_Paulo]","0.0","9.86"

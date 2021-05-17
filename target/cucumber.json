@@ -1,0 +1,170 @@
+[
+  {
+    "line": 5,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-17T01:18:08.902Z",
+        "before": [
+          {
+            "result": {
+              "duration": 29906900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonStepDefinitions.setUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Logar usuário",
+        "description": "",
+        "id": "testar-login;logar-usuário",
+        "after": [
+          {
+            "result": {
+              "duration": 746600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonStepDefinitions.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 5059867601,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "que estou na Pagina de login da Inmetrics",
+            "match": {
+              "location": "LoginStepDefinitions.que_estou_na_Pagina_de_login_da_Inmetrics()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 126103800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "preencho o usuario cadastrado",
+            "match": {
+              "location": "LoginStepDefinitions.preencho_o_usuario_cadastrado()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 132651000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "preencho a senha cadastrada",
+            "match": {
+              "location": "LoginStepDefinitions.preencho_a_senha_cadastrada()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 2760039500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "clico no botão Entre",
+            "match": {
+              "location": "LoginStepDefinitions.clico_no_botão_Entre()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 80363100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "login é efetuado com sucesso",
+            "match": {
+              "location": "LoginStepDefinitions.login_é_efetuado_com_sucesso()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TesteLogin"
+          }
+        ]
+      }
+    ],
+    "name": "Testar Login",
+    "description": "",
+    "id": "testar-login",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/testar_login.feature",
+    "tags": [
+      {
+        "name": "@TesteLogin",
+        "type": "Tag",
+        "location": {
+          "line": 4,
+          "column": 1
+        }
+      }
+    ]
+  }
+]         "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 1662468500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "clico no botão cadastrar",
+            "match": {
+              "location": "CadastroStepDefinitions.clico_no_botao_cadastrar()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 324936201,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "usuario é cadastrado com sucesso",
+            "match": {
+              "location": "CadastroStepDefinitions.usuario_cadastrado_com_sucesso()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TesteCadastro"
+          }
+        ]
+      }
+    ],
+    "name": "Testar Cadastro",
+    "description": "",
+    "id": "testar-cadastro",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/testar_cadastro.feature",
+    "tags": [
+      {
+        "name": "@TesteCadastro",
+        "type": "Tag",
+        "location": {
+          "line": 4,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

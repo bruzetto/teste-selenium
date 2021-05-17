@@ -6,8 +6,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        plugin = {"pretty"},
+        plugin = { "pretty", "html:target/cucumber-html-report", "json:target/cucumber.json", "junit:target/cucumber.xml" },
         features = "src/test/resources/features",
-        glue="br.com.teste.selenium.stepdefinitions"
+        tags = "@TesteCadastro",
+        glue="br.com.teste.selenium.stepdefinitions",
+        dryRun = false
 )
 public class TestarCadastroRunner {}

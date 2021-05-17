@@ -17,7 +17,6 @@
         <cucumber.version>4.8.0</cucumber.version>
         <encoding>UTF-8</encoding>
         <tags></tags>
-        <parallel.tests>4</parallel.tests>
         <webdriver.base.url></webdriver.base.url>
     </properties>
 
@@ -133,17 +132,18 @@
                 <version>2.22.1</version>
                 <configuration>
                     <includes>
-                        <include>**/*Test.java</include>
-                        <include>**/Test*.java</include>
-                        <include>**/*TestSuite.java</include>
-                        <include>**/When*.java</include>
+                        <include>**/*TesteSuite.java</include>
                     </includes>
                     <systemPropertyVariables>
                         <webdriver.base.url>${webdriver.base.url}</webdriver.base.url>
                     </systemPropertyVariables>
-                    <parallel>classes</parallel>
-                    <threadCount>${parallel.tests}</threadCount>
-                    <forkCount>${parallel.tests}</forkCount>
+                    <parallel>methods</parallel>
+                    <threadCount>1</threadCount>
+                    <forkCount>2</forkCount>
+                    <reuseForks>true</reuseForks>
+                    <reportsDirectory>
+                        ${project.build.directory}/failsafe-reports_${surefire.forkNumber}
+                    </reportsDirectory>
                 </configuration>
                 <executions>
                     <execution>
