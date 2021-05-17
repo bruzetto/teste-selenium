@@ -3,7 +3,6 @@ package br.com.teste.selenium.stepdefinitions;
 import br.com.teste.selenium.pageObjects.CadastroInmetricsPage;
 import br.com.teste.selenium.pageObjects.LoginInmetricsPage;
 import br.com.teste.selenium.utils.ManipuladorPropriedades;
-import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 import org.junit.Assert;

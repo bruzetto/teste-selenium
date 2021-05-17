@@ -1,15 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="9.868449">
-<testcase classname="Testar Login" name="Logar usuário" time="9.868449">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="18.541959">
+<testcase classname="Testar Cadastrar Funcionario" name="Logar usuário" time="18.541959">
 <system-out><![CDATA[Dado que estou na Pagina de login da Inmetrics..............................passed
 Quando preencho o usuario cadastrado........................................passed
 Quando preencho a senha cadastrada..........................................passed
 Quando clico no botão Entre.................................................passed
-Entao login é efetuado com sucesso..........................................passed
-]]></system-out>
-</testcase>
-</testsuite>
-.......................................passed
-Entao usuario é cadastrado com sucesso......................................passed
+Quando clico no botão Novo Funcionário......................................passed
+Quando preencho a nome do funcionario "Bruno Tozetto".......................passed
+Quando preencho o cargo do funcionario "Analista de Testes".................passed
+Quando preencho o CPF do funcionario "359.985.968-03".......................passed
+Quando preencho o salário do funcionario "1200000"..........................passed
+Quando preencho o sexo do funcionario "Masculino"...........................passed
+Quando preencho a admissão do funcionario "01/07/2012"......................passed
+Quando preencho a tipo de contratação do funcionario "CLT"..................passed
+Quando clico no botão Enviar................................................passed
+Entao funcionario é cadastrado com sucesso..................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

@@ -3,11 +3,11 @@
     "line": 5,
     "elements": [
       {
-        "start_timestamp": "2021-05-17T01:18:08.902Z",
+        "start_timestamp": "2021-05-17T02:04:15.398Z",
         "before": [
           {
             "result": {
-              "duration": 29906900,
+              "duration": 30247900,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 7,
+        "line": 25,
         "name": "Logar usuário",
         "description": "",
-        "id": "testar-login;logar-usuário",
+        "id": "testar-cadastrar-funcionario;logar-usuário;;2",
         "after": [
           {
             "result": {
-              "duration": 746600,
+              "duration": 717900,
               "status": "passed"
             },
             "match": {
@@ -31,11 +31,11 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Cenário",
+        "keyword": "Esquema do Cenário",
         "steps": [
           {
             "result": {
-              "duration": 5059867601,
+              "duration": 5775470900,
               "status": "passed"
             },
             "line": 8,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 126103800,
+              "duration": 125757600,
               "status": "passed"
             },
             "line": 9,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 132651000,
+              "duration": 131216500,
               "status": "passed"
             },
             "line": 10,
@@ -71,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 2760039500,
+              "duration": 2521025400,
               "status": "passed"
             },
             "line": 11,
@@ -83,82 +83,182 @@
           },
           {
             "result": {
-              "duration": 80363100,
+              "duration": 1382862100,
               "status": "passed"
             },
             "line": 12,
-            "name": "login é efetuado com sucesso",
+            "name": "clico no botão Novo Funcionário",
             "match": {
-              "location": "LoginStepDefinitions.login_é_efetuado_com_sucesso()"
-            },
-            "keyword": "Entao "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@TesteLogin"
-          }
-        ]
-      }
-    ],
-    "name": "Testar Login",
-    "description": "",
-    "id": "testar-login",
-    "keyword": "Funcionalidade",
-    "uri": "file:src/test/resources/features/testar_login.feature",
-    "tags": [
-      {
-        "name": "@TesteLogin",
-        "type": "Tag",
-        "location": {
-          "line": 4,
-          "column": 1
-        }
-      }
-    ]
-  }
-]         "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 1662468500,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "clico no botão cadastrar",
-            "match": {
-              "location": "CadastroStepDefinitions.clico_no_botao_cadastrar()"
+              "location": "CadastroFuncionarioStepDefinitions.clico_no_botão_Novo_Funcionário()"
             },
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 324936201,
+              "duration": 161985600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "preencho a nome do funcionario \"Bruno Tozetto\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bruno Tozetto\"",
+                  "offset": 31
+                }
+              ],
+              "location": "CadastroFuncionarioStepDefinitions.preencho_a_nome_do_funcionario(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 129140800,
               "status": "passed"
             },
             "line": 14,
-            "name": "usuario é cadastrado com sucesso",
+            "name": "preencho o cargo do funcionario \"Analista de Testes\"",
             "match": {
-              "location": "CadastroStepDefinitions.usuario_cadastrado_com_sucesso()"
+              "arguments": [
+                {
+                  "val": "\"Analista de Testes\"",
+                  "offset": 32
+                }
+              ],
+              "location": "CadastroFuncionarioStepDefinitions.preencho_o_cargo_do_funcionario(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 133290800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "preencho o CPF do funcionario \"359.985.968-03\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"359.985.968-03\"",
+                  "offset": 30
+                }
+              ],
+              "location": "CadastroFuncionarioStepDefinitions.preencho_o_CPF_do_funcionario(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 128563400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "preencho o salário do funcionario \"1200000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1200000\"",
+                  "offset": 34
+                }
+              ],
+              "location": "CadastroFuncionarioStepDefinitions.preencho_o_salário_do_funcionario(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 300937300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "preencho o sexo do funcionario \"Masculino\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Masculino\"",
+                  "offset": 31
+                }
+              ],
+              "location": "CadastroFuncionarioStepDefinitions.preencho_o_sexo_do_funcionario(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 136059200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "preencho a admissão do funcionario \"01/07/2012\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"01/07/2012\"",
+                  "offset": 35
+                }
+              ],
+              "location": "CadastroFuncionarioStepDefinitions.preencho_a_admissão_do_funcionario(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 231369900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "preencho a tipo de contratação do funcionario \"CLT\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CLT\"",
+                  "offset": 46
+                }
+              ],
+              "location": "CadastroFuncionarioStepDefinitions.preencho_a_tipo_de_contratação_do_funcionario(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 2147741900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "clico no botão Enviar",
+            "match": {
+              "location": "CadastroFuncionarioStepDefinitions.clico_no_botão_Enviar()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 307721500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "funcionario é cadastrado com sucesso",
+            "match": {
+              "location": "CadastroFuncionarioStepDefinitions.funcionario_é_cadastrado_com_sucesso()"
             },
             "keyword": "Entao "
           }
         ],
         "tags": [
           {
-            "name": "@TesteCadastro"
+            "name": "@TesteCadastrarFuncionario"
           }
         ]
       }
     ],
-    "name": "Testar Cadastro",
+    "name": "Testar Cadastrar Funcionario",
     "description": "",
-    "id": "testar-cadastro",
+    "id": "testar-cadastrar-funcionario",
     "keyword": "Funcionalidade",
-    "uri": "file:src/test/resources/features/testar_cadastro.feature",
+    "uri": "file:src/test/resources/features/testar_cadastro_funcionario.feature",
     "tags": [
       {
-        "name": "@TesteCadastro",
+        "name": "@TesteCadastrarFuncionario",
         "type": "Tag",
         "location": {
           "line": 4,
