@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="10.190611">
-<testcase classname="Testar Excluir Funcionario" name="Exluir funcionario" time="10.190611">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="10.774045">
+<testcase classname="Testar Excluir Funcionario" name="Exluir funcionario" time="10.774045">
 <system-out><![CDATA[Dado que estou na Pagina de login da Inmetrics..............................passed
 Quando preencho o usuario cadastrado........................................passed
 Quando preencho a senha cadastrada..........................................passed
@@ -21,10 +21,5 @@ Quando preencho a tipo de contratação do funcionario "CLT"..................pa
 Quando clico no botão Enviar................................................passed
 Entao funcionario é cadastrado com sucesso..................................passed
 ]]></system-out>
-</testcase>
-</testsuite>
-CadastroStepDefinitions.usuario_cadastrado_com_sucesso(CadastroStepDefinitions.java:50)
-	at ✽.usuario é cadastrado com sucesso(file:src/test/resources/features/testar_cadastro_usuario.feature:14)
-]]></failure>
 </testcase>
 </testsuite>

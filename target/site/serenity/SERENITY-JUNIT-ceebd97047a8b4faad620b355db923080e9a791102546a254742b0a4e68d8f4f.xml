@@ -1,4 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Testar Cadastro usuario" skipped="0" tests="1" time="13.91" timestamp="2021-05-16 11:54:28"><testcase name="Cadastrar usuário"><failure message="Usuário já cadastrado." type="java.lang.AssertionError">Usuário já cadastrado.</failure><system-err>Usuário já cadastrado.&#13;
-br.com.teste.selenium.stepdefinitions.CadastroStepDefinitions.usuario_cadastrado_com_sucesso(CadastroStepDefinitions.java:50)&#13;
-✽.usuario é cadastrado com sucesso(file:src/test/resources/features/testar_cadastro_usuario.feature:14)&#13;
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Testar Cadastro usuario" skipped="0" tests="1" time="14.63" timestamp="2021-05-16 11:57:21"><testcase name="Cadastrar usuário"/></testsuite>
