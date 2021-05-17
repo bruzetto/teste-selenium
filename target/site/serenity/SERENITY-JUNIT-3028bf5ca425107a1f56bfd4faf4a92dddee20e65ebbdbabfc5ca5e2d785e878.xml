@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Testar Excluir Funcionario Duplicado" skipped="0" tests="1" time="15.67" timestamp="2021-05-17 12:13:17"><testcase name="Exluir funcionario"><failure message="A função de excluir não está funcionando corretamente. Deveria ter excluido o CPF: 326.645.571-14" type="java.lang.AssertionError">A função de excluir não está funcionando corretamente. Deveria ter excluido o CPF: 326.645.571-14</failure><system-err>A função de excluir não está funcionando corretamente. Deveria ter excluido o CPF: 326.645.571-14&#13;
+br.com.teste.selenium.stepdefinitions.ExclusaoFuncionarioStepDefinitions.funcionarios_duplicados_são_excluidos_com_sucesso(ExclusaoFuncionarioStepDefinitions.java:42)&#13;
+✽.funcionarios duplicados são excluidos com sucesso(file:src/test/resources/features/testar_remover_funcionarios_duplicados.feature:13)&#13;
+</system-err></testcase></testsuite>

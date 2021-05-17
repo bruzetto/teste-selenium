@@ -84,6 +84,6 @@ public class CadastroFuncionarioStepDefinitions {
     @Entao("funcionario não pode ser duplicado")
     public void funcionario_nao_pode_ser_duplicado() {
 
-        Assert.assertTrue("O Sistema está permitindo cadastro de CPF duplicado.", (principalInmetricsPage.quantidadeDeCPF(ManipuladorPropriedades.getCPFFunc()) == 1));;
+        Assert.assertTrue("O Sistema está permitindo cadastro de CPF duplicado.", (principalInmetricsPage.quantidadeDeCPF(ManipuladorPropriedades.getCPFFunc()) == 1));
     }
 }

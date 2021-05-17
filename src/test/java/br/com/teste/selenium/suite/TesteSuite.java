@@ -7,6 +7,7 @@ import br.com.teste.selenium.runner.TestarCadastroRunner;
 import br.com.teste.selenium.runner.TestarLoginRunner;
 import br.com.teste.selenium.runner.TestarCadastroFuncionarioRunner;
 import br.com.teste.selenium.runner.TestarCadastroFuncionarioDuplicadoRunner;
+import br.com.teste.selenium.runner.TestarExcluirFuncionarioDuplicadoRunner;
 import br.com.teste.selenium.runner.TestarEditarFuncionarioRunner;
 import br.com.teste.selenium.runner.TestarExcluirFuncionarioRunner;
 
@@ -17,6 +18,7 @@ import br.com.teste.selenium.runner.TestarExcluirFuncionarioRunner;
         TestarLoginRunner.class,
         TestarCadastroFuncionarioRunner.class,
         TestarCadastroFuncionarioDuplicadoRunner.class,
+        TestarExcluirFuncionarioDuplicadoRunner.class,
         TestarEditarFuncionarioRunner.class,
         TestarExcluirFuncionarioRunner.class
 })

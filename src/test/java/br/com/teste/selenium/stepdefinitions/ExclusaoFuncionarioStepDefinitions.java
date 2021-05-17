@@ -15,15 +15,53 @@ public class ExclusaoFuncionarioStepDefinitions {
 
         int qtdeCPF = principalInmetricsPage.quantidadeDeCPF(ManipuladorPropriedades.getCPFFunc());
 
-        for (int i = 0; i < qtdeCPF; i++) {
+        removerDuplicados(qtdeCPF);
+    }
 
-            principalInmetricsPage.clicarNoBotaoExcluirDoFuncionarioCadastrado();
+    @Quando("removo funcionarios duplicados")
+    public void removo_funcionarios_duplicados() {
+
+        int qtdeCPF = principalInmetricsPage.quantidadeDeCPF(ManipuladorPropriedades.getCPFFunc());
+
+        if (qtdeCPF > 1) {
+            removerDuplicados(qtdeCPF - 1);
+
         }
+    }
+
+    @Entao("funcionarios duplicados são excluidos com sucesso")
+    public void funcionarios_duplicados_são_excluidos_com_sucesso() {
+
+        int qtdeCPF = principalInmetricsPage.quantidadeDeCPF(ManipuladorPropriedades.getCPFFunc());
+
+        if (qtdeCPF > 1) {
+
+            removerDuplicados(qtdeCPF - 1);
+        }
+
+        Assert.assertTrue("A função de excluir não está funcionando corretamente. Deveria ter excluido o CPF: " + ManipuladorPropriedades.getCPFFunc(), (qtdeCPF == 1));
     }
 
     @Entao("funcionario é excluido com sucesso")
     public void funcionario_é_excluido_com_sucesso() {
 
-        Assert.assertTrue("Funcionário não foi atualizado com sucesso.", (principalInmetricsPage.validarSeFuncFoiRemovido() == true));
+        int qtdeCPF = principalInmetricsPage.quantidadeDeCPF(ManipuladorPropriedades.getCPFFunc());
+
+        if (qtdeCPF > 1) {
+
+            removerDuplicados(qtdeCPF - 1);
+        }
+
+        Assert.assertTrue("Funcionário não foi excluido com sucesso.", (principalInmetricsPage.validarSeFuncFoiRemovido() == true));
+        Assert.assertTrue("A função de excluir não está funcionando corretamente. Deveria ter excluido o CPF: " + ManipuladorPropriedades.getCPFFunc(), (qtdeCPF == 0));
+    }
+
+    private void removerDuplicados(int qtdeCPF) {
+
+        //REMOVER FUNCIONARIOS DUPLICADOS
+        for (int i = 0; i < qtdeCPF; i++) {
+
+            principalInmetricsPage.clicarNoBotaoExcluirDoFuncionarioCadastrado();
+        }
     }
 }

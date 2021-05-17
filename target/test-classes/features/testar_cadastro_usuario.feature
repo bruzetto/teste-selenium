@@ -14,5 +14,5 @@ Funcionalidade: Testar Cadastro usuario
     Entao usuario é cadastrado com sucesso
 
     Exemplos:
-      | usuario     | senha    |
-      | brunotozett7| Teste12% |
+      | usuario      | senha    |
+      | brunotozett12| Teste12% |

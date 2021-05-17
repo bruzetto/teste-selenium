@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Testar Cadastrar Funcionario" skipped="0" tests="1" time="22.65" timestamp="2021-05-17 10:18:34"><testcase name="Cadastrar Funcionario"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Testar Cadastrar Funcionario" skipped="0" tests="2" time="24.6" timestamp="2021-05-17 12:12:28"><testcase name="Cadastrar Funcionario"/><testcase name="Cadastrar Funcionario"/></testsuite>

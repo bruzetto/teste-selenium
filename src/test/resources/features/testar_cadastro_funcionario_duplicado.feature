@@ -22,4 +22,4 @@ Funcionalidade: Testar Cadastrar Funcionario Duplicado
 
     Exemplos:
       | nome          | cargo              | salario | sexo      | admissao   | tipoContratacao |
-      | Artur Tozetto | Analista de Testes | 1200000 | Masculino | 01/07/2012 | CLT             |
+      | Abner Tozetto | Analista de Testes | 1500000 | Masculino | 03/07/2012 | CLT             |

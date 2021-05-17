@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: Testar Excluir Funcionario Duplicado
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 15.673 s <<< FAILURE! - in Testar Excluir Funcionario Duplicado
+Exluir funcionario(Testar Excluir Funcionario Duplicado)  Time elapsed: 15.673 s  <<< FAILURE!
+java.lang.AssertionError: A função de excluir não está funcionando corretamente. Deveria ter excluido o CPF: 326.645.571-14
+
