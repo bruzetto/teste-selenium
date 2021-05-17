@@ -1,25 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="12.824608">
-<testcase classname="Testar Excluir Funcionario" name="Exluir funcionario" time="12.824608">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="16.669388">
+<testcase classname="Testar Excluir Funcionario" name="Exluir funcionario" time="16.669388">
 <system-out><![CDATA[Dado que estou na Pagina de login da Inmetrics..............................passed
 Quando preencho o usuario cadastrado........................................passed
 Quando preencho a senha cadastrada..........................................passed
 Quando clico no botão Entre.................................................passed
 Quando clico no botão Excluir do funcionario cadastrado.....................passed
 Entao funcionario é excluido com sucesso....................................passed
-]]></system-out>
-</testcase>
-</testsuite>
-..............................passed
-Entao funcionario é atualizado com sucesso..................................passed
-]]></system-out>
-</testcase>
-</testsuite>
-"1200000"..........................passed
-Quando preencho o sexo do funcionario "Masculino"...........................passed
-Quando preencho a admissão do funcionario "01/07/2012"......................passed
-Quando preencho a tipo de contratação do funcionario "CLT"..................passed
-Quando clico no botão Enviar................................................passed
-Entao funcionario é cadastrado com sucesso..................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

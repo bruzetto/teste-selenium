@@ -39,6 +39,12 @@ public class CadastroFuncionarioStepDefinitions {
         ManipuladorPropriedades.setCPFFunc(CPF);
     }
 
+    @Quando("preencho o CPF do funcionario cadastrado")
+    public void preencho_o_CPF_do_funcionario_cadastrado() {
+
+        principalInmetricsPage.preencherCPFFuncinario(ManipuladorPropriedades.getCPFFunc());
+    }
+
     @Quando("preencho o salário do funcionario {string}")
     public void preencho_o_salário_do_funcionario(String salario) {
 
@@ -73,5 +79,11 @@ public class CadastroFuncionarioStepDefinitions {
     public void funcionario_é_cadastrado_com_sucesso() {
 
         Assert.assertTrue("Funcionário não foi cadastrado com sucesso.", (principalInmetricsPage.validarSeUsuarioFoiCadastrado() == true));
+    }
+
+    @Entao("funcionario não pode ser duplicado")
+    public void funcionario_nao_pode_ser_duplicado() {
+
+        Assert.assertTrue("O Sistema está permitindo cadastro de CPF duplicado.", (principalInmetricsPage.quantidadeDeCPF(ManipuladorPropriedades.getCPFFunc()) == 1));;
     }
 }

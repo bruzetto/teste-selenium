@@ -21,5 +21,5 @@ Funcionalidade: Testar Cadastrar Funcionario
     Entao funcionario é cadastrado com sucesso
 
     Exemplos:
-      | nome         | cargo              | salario | sexo      | admissao   | tipoContratacao |
-      | Bruno Tozetto| Analista de Testes | 1200000 | Masculino | 01/07/2012 | CLT             |
+      | nome          | cargo              | salario | sexo      | admissao   | tipoContratacao |
+      | Artur Tozetto | Analista de Testes | 1200000 | Masculino | 01/07/2012 | CLT             |

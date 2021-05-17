@@ -15,12 +15,6 @@ public class EdicaoFuncionarioStepDefinitions {
         principalInmetricsPage.clicarNoBotaoEditarDoFuncionarioCadastrado();
     }
 
-    @Quando("edito o {string} do funcionaro")
-    public void edito_o_do_funcionaro(String cargoNovo) {
-
-        principalInmetricsPage.editarCargoFunc(cargoNovo);
-    }
-
     @Entao("funcionario é atualizado com sucesso")
     public void funcionario_é_atualizado_com_sucesso() {
 

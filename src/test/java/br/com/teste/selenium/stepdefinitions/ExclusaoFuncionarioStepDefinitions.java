@@ -1,6 +1,7 @@
 package br.com.teste.selenium.stepdefinitions;
 
 import br.com.teste.selenium.pageObjects.PrincipalInmetricsPage;
+import br.com.teste.selenium.utils.ManipuladorPropriedades;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 import org.junit.Assert;
@@ -12,7 +13,12 @@ public class ExclusaoFuncionarioStepDefinitions {
     @Quando("clico no botão Excluir do funcionario cadastrado")
     public void clico_no_botão_Excluir_do_funcionario_cadastrado() {
 
-        principalInmetricsPage.clicarNoBotaoExcluirDoFuncionarioCadastrado();
+        int qtdeCPF = principalInmetricsPage.quantidadeDeCPF(ManipuladorPropriedades.getCPFFunc());
+
+        for (int i = 0; i < qtdeCPF; i++) {
+
+            principalInmetricsPage.clicarNoBotaoExcluirDoFuncionarioCadastrado();
+        }
     }
 
     @Entao("funcionario é excluido com sucesso")

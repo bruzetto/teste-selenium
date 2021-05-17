@@ -66,6 +66,12 @@ public class PrincipalInmetricsPage extends CommonPageObject {
     public void preencherNomeFuncinario(String nome) {
 
         nomeFunc.waitUntilEnabled();
+
+        if (!nomeFunc.getValue().isEmpty()) {
+
+            nomeFunc.clear();
+        }
+
         nomeFunc.sendKeys(nome);
     }
 
@@ -75,6 +81,12 @@ public class PrincipalInmetricsPage extends CommonPageObject {
     public void preencherCPFFuncinario(String cpf) {
 
         cpfFunc.waitUntilEnabled();
+
+        if (!cpfFunc.getValue().isEmpty()) {
+
+            cpfFunc.clear();
+        }
+
         cpfFunc.sendKeys(cpf);
     }
 
@@ -94,6 +106,12 @@ public class PrincipalInmetricsPage extends CommonPageObject {
     public void preencherAdmissaoFunc(String admissao) {
 
         inputAdmissao.waitUntilEnabled();
+
+        if (!inputAdmissao.getValue().isEmpty()) {
+
+            inputAdmissao.clear();
+        }
+
         inputAdmissao.sendKeys(admissao);
     }
 
@@ -103,13 +121,12 @@ public class PrincipalInmetricsPage extends CommonPageObject {
     public void preencherCargoFunc(String cargo) {
 
         inputCargo.waitUntilEnabled();
-        inputCargo.sendKeys(cargo);
-    }
 
-    public void editarCargoFunc(String cargo) {
+        if (!inputCargo.getValue().isEmpty()) {
 
-        inputCargo.waitUntilEnabled();
-        inputCargo.clear();
+            inputCargo.clear();
+        }
+
         inputCargo.sendKeys(cargo);
     }
 
@@ -119,6 +136,12 @@ public class PrincipalInmetricsPage extends CommonPageObject {
     public void preencherSalarioFunc(String salario) {
 
         dinheiro.waitUntilEnabled();
+
+        if (!dinheiro.getValue().isEmpty()) {
+
+            dinheiro.clear();
+        }
+
         dinheiro.sendKeys(salario);
     }
 
@@ -168,6 +191,11 @@ public class PrincipalInmetricsPage extends CommonPageObject {
 
         $(By.xpath("//td[contains(text(), '" + ManipuladorPropriedades.getCPFFunc() + "')]/parent::tr//button[@id='delete-btn']")).waitUntilClickable();
         $(By.xpath("//td[contains(text(), '" + ManipuladorPropriedades.getCPFFunc() + "')]/parent::tr//button[@id='delete-btn']")).click();
+    }
+
+    public int quantidadeDeCPF(String CPF) {
+
+        return getDriver().findElements(By.xpath("//td[contains(text(), '" + ManipuladorPropriedades.getCPFFunc() + "')]")).size();
     }
 
     @FindBy(xpath="//div[@class='container-message']/div")

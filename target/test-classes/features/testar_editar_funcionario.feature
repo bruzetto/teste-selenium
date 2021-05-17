@@ -10,10 +10,16 @@ Funcionalidade: Testar Editar Funcionario
     Quando preencho a senha cadastrada
     Quando clico no botão Entre
     Quando clico no botão Editar do funcionario cadastrado
-    Quando edito o "<cargo>" do funcionaro
+    Quando preencho a nome do funcionario "<nome>"
+    Quando preencho o cargo do funcionario "<cargo>"
+    Quando preencho o CPF do funcionario
+    Quando preencho o salário do funcionario "<salario>"
+    Quando preencho o sexo do funcionario "<sexo>"
+    Quando preencho a admissão do funcionario "<admissao>"
+    Quando preencho a tipo de contratação do funcionario "<tipoContratacao>"
     Quando clico no botão Enviar
     Entao funcionario é atualizado com sucesso
 
     Exemplos:
-      | cargo                     |
-      | Analista de Testes Senior |
+      | nome        | cargo                     | salario | sexo      | admissao   | tipoContratacao |
+      | Ana Rosseti | Analista de Testes Senior | 1500000 | Feminino  | 02/07/2012 | PJ              |
